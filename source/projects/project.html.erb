@@ -1,0 +1,17 @@
+<p>
+  <a href="/">&laquo; Back to home</a>
+</p>
+
+<h1><%= project.title %></h1>
+
+<% if prev_project %>
+  <p>
+    <a href="/projects/<%= prev_project.slug %>">Previous Project: <%= prev_project.title %></a>
+  </p>
+<% end %>
+
+<% if next_project %>
+  <p>
+    <a href="/projects/<%= next_project.slug %>">Next Project: <%= next_project.title %></a>
+  </p>
+<% end %>
